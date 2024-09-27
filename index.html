@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare E-Commerce</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        h2 {
+            font-size: 2em;
+            color: #333;
+        }
+        p {
+            font-size: 1.1em;
+            color: #666;
+        }
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 0.8em 1.5em;
+            text-decoration: none;
+            margin-top: 1em;
+            display: inline-block;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        /* Products Section */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1em;
+            padding: 2em 0;
+        }
+        .product-item {
+            background-color: white;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product-item h3 {
+            margin: 10px 0;
+        }
+        .product-item p {
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+        /* Form Styles */
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        label {
+            font-size: 1.1em;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.8em;
+            margin-bottom: 1em;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 1em 2em;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>GlowSkincare</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Home Page -->
+    <section id="home">
+        <h2>Welcome to GlowSkincare</h2>
+        <p>Your Skin Deserves the Best</p>
+        <p>Discover our range of skincare products for glowing, healthy skin.</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
+
+    <!-- About Us Page -->
+    <section id="about">
+        <h2>About GlowSkincare</h2>
+        <p>At GlowSkincare, we believe that every person deserves radiant and healthy skin. Our mission is to provide high-quality, natural skincare products that deliver visible results.</p>
+        <p>Our team of skincare experts is dedicated to creating innovative formulas that cater to all skin types.</p>
+    </section>
+
+    <!-- Products Page -->
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="products">
+            <!-- Product 1 -->
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRB4S_6nZFawzVRu7Mc_EWrLTTwrCfkXPT1zeq4RBbJDn9spY-4YG9rCcQTxB-NElHvkdoCjTSJvZizLuM-J_3U8dwGFI8uBa3w5w8DWwGHsf9BVkXdBx1ZwJaK70_wjVxICz-Jlek&usqp=CAc" alt="Moisturizing Cream">
+                <h3>Moisturizing Cream</h3>
+                <p>A hydrating cream for soft, supple skin.</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-item">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSHV0KN8ihmoiU72GWAyRHRYarmwcgPvWyHIIWjAo4Th9_WITegY2z-JMS1QGAideu25uAEJIw5f0Q1a8nxxCw3_gp8g7vQjGRjA2BanULyWTmlB-MJt-dgjJNq&usqp=CAc" alt="Brightening Serum">
+                <h3>Brightening Serum</h3>
+                <p>Reveal brighter, glowing skin with our serum.</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQjHvNtU7Vtm_-gcKDfQpZDXNpHIAMVInOoV4-YlqJjrFDgFoUIMZNywFgVVm_h_ri7dzqh7hGGJeoAF0KKAfFImZHLzZCnHBHuI9-Om2Qe42Vjo2SWOtYtAjTIy5ZAnhx8zxtaOYk&usqp=CAc" alt="SPF Sunscreen">
+                <h3>SPF Sunscreen</h3>
+                <p>Protect your skin from harmful UV rays with SPF 50+.</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-item">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR6wOXDboFb2BKmdJPVByxhO1uAlT4jpd5EHFuc4MoFaqKSQzHngrUcRkHte3ISfHhTkTaNjdkFXjpklnCyGSIpO0_dJgd46aSQa2sC9Fb1R0hAj5Q-os_MmCVpvz4ScVIny5AjUvQ&usqp=CAc" alt="Anti-Aging Cream">
+                <h3>Anti-Aging Cream</h3>
+                <p>Reduce the appearance of wrinkles and fine lines.</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-item">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSJBkCi2u_6P4qpO1c7jubZzKTQRt1SpLUnGviaRaEmoVWiyntiHD72i-tdIuekt9Kf7zOp7OaTKcEep3niVGssOJ4BPs33x_AjLPFN2dIDbW-x1d80_8UxkKcu1rpY543SC5CrOnQ&usqp=CAc" alt="Cleansing Foam">
+                <h3>Cleansing Foam</h3>
+                <p>A gentle cleansing foam for all skin types.</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-item">
+                <img src="https://m.media-amazon.com/images/I/41WiRkLH55L._SX522_.jpg" alt="Cleansing Foam">
+                <h3>Hydrating Mask</h3>
+                <p>Replenish moisture with our intense hydrating mask.</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <!-- Product 7 -->
+            <div class="product-item">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWVjgSwLKEfoaOpfDf-Er9ywxvdHQwG78UyQNtF-VnVg-HlFMiZ4Ehc4iaXx5KDTv3iMOh3uG38xlRMYie93WHEWc2O4MzBGspSg8vpC61yyMbZ3Vndh_CECptaxVCZm6-Op7_hi8k&usqp=CAc" alt="Vitamin C Serum">
+                <h3>Vitamin C Serum</h3>
+                <p>Brighten skin and reduce dark spots with Vitamin C.</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <!-- Product 8 -->
+            <div class="product-item">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRh90pOjU62HxrtpC_ZMwk5hsmdnd-jvxvXDctJ-hbfnZUsfw540L8V6QN4CJ4o1FFB75RJ9rdoghnxRRbwNjskhwliJx3eepUyqsTpYoHKXNIQ-QHDSWrI-H-FJAKMnxpR57m_PA&usqp=CAc" alt="Exfoliating Scrub">
+                <h3>Exfoliating Scrub</h3>
+                <p>Exfoliate dead skin cells for a smoother complexion.</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <!-- Product 9 -->
+            <div class="product-item">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRO60WSM5UohbqmKBcIrtDATL7wWb0edzVBoG3XJ74-v38lwJP9iLJsxaeFALFM3iElixX2Gyq5akIUCmks24-LDJW3gdJAhmeCsOthYhIcK8XrZiKihRX130p0RAxX8D73jPWoKg&usqp=CAc" alt="Nourishing Oil">
+                <h3>Nourishing Oil</h3>
+                <p>Deeply nourish and repair skin with our facial oil.</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <!-- Product 10 -->
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRVi9OmZs3jWor7lU183xCp3vWdhREoAzSCGq_MX7aGgXHDPURCILD3HNJqAxLq61BL5Th5_djn9M1HuwDCMASr4KDHIJ4dbF2YI9AkfwEdK4roJF3CCyry&usqp=CAc" alt="Eye Cream">
+                <h3>Eye Cream</h3>
+                <p>Reduce puffiness and dark circles around the eyes.</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Page -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to reach out to us.</p>
+        <form action="submit_contact.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 GlowSkincare. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
